@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    min-height: 100%;
+    font-size: 62.5%;
+  }
+
+body{
+    min-width: 100%;
+    font-family: Arial, Helvetica, sans-serif
+}
+/***********************************INDEX***********************************************************************************************************************************************/
+/**Header**/
+#body-index{
+    background-color: rgba(213,213,213,1);
+    color: black; 
+}
+.contenedor-header-index{
+    background-color: rgba(144,153,162,1);
+    border-bottom-right-radius:1rem;
+    border-bottom-left-radius: 1rem; 
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+/**Main**/
+.contenedor-main-index{
+    max-width: 100%;
+    margin-top:5rem; 
+}
+.iconos{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease;
+}
+.iconos img{
+    width: 40%;
+    height: 40%;
+    padding: 2rem; 
+}
+.iconos h2{
+    font-size:3rem;
+    min-height: 0%;
+}
+.iconos a:hover{
+    background-color: rgba(109,121,147,1) ;
+    border-radius: 2rem;
+}
+/***************************************************************************************************************************************************************************************/
+
+
+
+/***********************************Pag2_maestro y Pag2_alumnos****************************************************************************************************************************************/
+.body-pag2{
+    background-color: rgba(51,58,86,1); 
+}
+
+/**Main**/
+.contenedor-form {
+    background: rgba(82,101,143,.5) ;
+    max-width: 50rem;
+    width: 100%;
+    margin: 4.8rem auto;
+    border-radius: .5rem;
+    color: #E8E8E8;
+    position: relative;
+}
+.contenedor-form .toggle {
+    position: absolute;
+    top: .7rem;
+    right: .7rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.contenedor-form .toggle span {
+    letter-spacing: 0.1rem;
+}
+.contenedor-form h2 {
+    margin: 0 0 2.8rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 0 0 2rem 0;
+    background:  #333A56;
+    color: #E8E8E8;
+    border: none;
+    border-radius: .2rem;
+    border-bottom: .4rem solid #E8E8E8;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: .4rem solid rgb(75, 85, 182);
+}
+
+.contenedor-form input[type="submit"] {
+    background: #E8E8E8;
+    color: #333A56;
+    width: 100%;
+    border: none;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgb(250, 248, 229) ;
+}
+
+.contenedor-form .reset-password {
+    background: rgba(82,101,143,1);
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    transition: all .5s ease;
+}
+
+.contenedor-form .reset-password a {
+    color: #E8E8E8;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.contenedor-form .reset-password:hover{
+    cursor: pointer;
+    background-color: rgba(51,58,86,.5); 
+}
+.contenedor-form .formulario {
+    display: none;
+    padding: 4rem;
+}
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
+/**********************************************************************************************************************************************************************************/
+    
+/************************************************************************Pagina rubrica_general.php*****************************************************************************************/
+
+.encabezado-rubrica{
+    max-width: 100%;
+    background-color: rgb(12, 154, 236);
+    padding: .01rem;
+}
+.encabezado-rubrica h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.contenedor-boton_regresar{
+    max-width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-regresar{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    background-color:  white;
+    border: rgba(0, 118, 187, 0.932) .3rem solid; 
+    padding: .8rem;
+    border-radius: .8rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+.btn-regresar:hover{
+    background-color: rgba(0, 118, 187, 0.932);
+    border: rgba(255, 255, 255, 0.932) .3rem transparent; 
+    border-radius: 1rem; 
+    color: white;
+}
+table{
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+        color: rgb(2, 2, 2);
+        margin-top: 3rem;
+        border: none;
+        border-radius:1rem; 
+    }
+    tr,th,td{
+        font-size: 2rem;
+        padding: 2rem; 
+    }
+    th{
+        text-align: left;
+    }
+    .primer-cuadro {
+        background-color:rgb(0, 106, 226);
+    }
+    .primer-cuadro p{
+        margin: 0rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    thead{
+        background-color:rgb(18, 147, 221);
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+    thead th,td{
+        text-align: center;
+    }
+    tr:nth-child(even){
+        background-color:rgba(124, 207, 255, 0.473) 
+    }
+    .contenedor-tabla{
+        display: flex;
+        justify-content: center; 
+    }
+    .texto-tabla{
+        border: none;
+        background-color: transparent;
+    }
+    .btn-guardar{
+        min-height: 0%;
+        max-height: 30%;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 2rem;
+        background-color:  rgb(0, 132, 255);
+        border: transparent;
+        color: white;
+        border-radius: .3rem;
+        transition: background-color .5s ease-in-out;
+        transition: border-radius .3s ease-in-out;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-guardar:hover{
+        border-radius: .8rem;
+        cursor: pointer;
+        background-color:  rgb(0, 111, 214);
+    }
+    /**Calificaciones************************************************************/
+    .datos-alumno h2{
+        font-size: 2rem;
+    }
+    .datos-alumno h3{
+        font-size: 1.5rem;
+    }
